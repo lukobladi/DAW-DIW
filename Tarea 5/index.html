@@ -41,6 +41,8 @@
 
     <header>
         <a href="index.html">
+            <!-- Imagen buscada en Openverse. He elegido una imagen vestorial por tratarse de un clipart de dos colores. 
+                Podría haberlo exportado también como png ya que no va a tener redimensionados y soporta trasnparencias  -->
             <img src="imagenes/libros.svg" alt="Logo de Enciclopedia Front-End" width="100" height="100"
                 title="Logo de Enciclopedia Front-End" />
         </a>
@@ -60,39 +62,40 @@
 
     <main>
 
-        <figure>
+        <!-- Modifico imagen buscada con Openverse en Gimp para convertir a webp -->
+        <!-- Exporto a diferentes resoluciones para que dispositivos con pantalla pequeña no tengan que descargar la imagen grande, tal com se indica en:
+        https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+        <img srcset="imagenes/monasterio-320w.webp 320w, 
+        imagenes/monasterio-480w.webp 480w, 
+        imagenes/monasterio-640w.webp 640w, 
+        imagenes/monasterio-800w.webp 800w, 
+        imagenes/monasterio.webp 2000w" 
+        sizes="(max-width: 340px) 320px,
+            (max-width: 500px) 480px,
+            (max-width: 660px) 640px,
+            (max-width: 820px) 800px" 
+            src="imagenes/monasterio.webp" class="imagen-fondo"
+            alt="Imagen de fondo foto de un monasterio. Autor jchapiewsky">
+        <!-- Licencia  CC BY-SA 2.0 Autor: jchapiewsky -->
 
-            <img src="img/library.webp" class="img-fluid" srcset="
-                img/library@mobile.webp 320w,
-                img/library@wide-mobile.webp 480w,
-                img/library@tablet.webp 768w,
-                img/library@desktop.webp 1024w,
-                img/library@hires.webp 1280w" sizes=" (max-width: 30em) 60vw,
-                (max-width: 40em) 90vw" alt="Image british library">
-
-        </figure>
 
     </main>
 
     <footer>
-        <div class="container">
+        <div class="contenido">
             <img class="clip" src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
             <h3>Enciclopedia de Front-End</h3>
-            <address class="pTop15" lang="es">Calle Cantones 9. 31243 Arróniz<br>Tel. 948 22 65 36<br><a
-                    href="mailto:info@enciclopedia.org">info@enciclopediafrontend.org</a></address>
-            <ul class="noPics pTop15">
-                <li><a href=""><span class="fab fa-twitter"></span></a></li>
-                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
-                <li><a href=""><span class="fab fa-instagram"></span></a></li>
-                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+            <address class="contacto" lang="es">Mahatzagain kalea 3 <br>Tel. 622 01 98 70<br><a
+                    href="mailto:eneko@disroot.org">eneko@disroot.org</a></address>
+
+            <ul class="iconos-sociales">
+                <li><a href="https://twitter.com/"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a></li>
+                <li><a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a></li>
             </ul>
-            <ul class="noPics menuFooter pTop15">
-                <li><a href="">Quiénes somos</a></li>
-                <li><a href="">Política de privacidad</a></li>
-                <li><a href="">Aviso legal</a></li>
-                <li><a href="" lang="en">Cookies</a></li>
-            </ul>
-            <div class="credit pTop15">
+
+            <div class="autoria">
 
                 <p>Actividad realizada por Eneko Bladi para DIW </p>
 

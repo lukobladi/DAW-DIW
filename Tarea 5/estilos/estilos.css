@@ -1,21 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+/* defino los colores como variables para tenerlo unificado */
+:root {
+    --color-primario: rgb(201, 186, 145);
+    --color-secundario:  black;
+    --color-primario-claro: white;
+    --color-secundario-claro: #333333;
+}
+
+/* Estilo para todos todos los elementos */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     font-family: 'Quicksand', sans-serif;
-    font: 'Quicksand', sans-serif;
+}
+
+/* Estilo para todos los enlaces */
+a:link, a:visited {
+    color: var(--color-secundario-claro);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: .88rem;
 }
 
 html{
-    background-color: black;
+    background-color: var(--color-secundario);
 }
 
 body {
-    background-color: rgb(201, 186, 145);
-    color: black;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+main {
+    display: block;
+
+}
+
+.imagen-fondo{
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
 }
 
 header .titulo {
@@ -34,8 +66,6 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0;
-    padding: 0;
     line-height: 2.5em;
 }
 
@@ -45,21 +75,37 @@ nav ul li a {
     margin: 0 1em;
 }
 
-nav ul li a:link, nav ul li a:visited {
-    color: #333333;
+
+nav ul li a:hover {
+    color: var(--color-primario-claro);
+}
+
+footer .contenido{
+    text-align: center;
+}
+
+.iconos-sociales{
+    display: table;
+    margin: 0 auto;
+}
+
+.iconos-sociales li {
+    display: inline;
+    line-height: 2.5em;
+}
+
+.iconos-sociales li a:visited {
+    color: var(--color-primario);
     text-decoration: none;
     text-transform: uppercase;
     font-family: Helvetica;
     font-size: .88rem;
 }
 
-nav ul li a:hover {
-    color: #fff;
+.iconos-sociales li a:hover {
+    color: var(--color-primario-claro);
 }
 
-
-
-footer {
-    background-color: black;
-    color: rgb(201, 186, 145);
+.autoria{
+    font-size: .60rem;
 }
