@@ -91,6 +91,7 @@ footer .contenido{
 .iconos-sociales li {
     display: inline;
     line-height: 2.5em;
+    margin-inline-end: 20px;
 }
 
 .iconos-sociales li a:visited {
@@ -107,4 +108,9 @@ footer .contenido{
 
 .autoria{
     font-size: .60rem;
+}
+
+#logo{
+    max-width: 20%;
+
 }
