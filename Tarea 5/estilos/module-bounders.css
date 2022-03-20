@@ -1,0 +1,43 @@
+.imagen-fondo {
+    max-width: 100%;
+    height: auto;
+}
+
+#articulo {
+    display: block;
+    padding: 40px 70px 70px 100px;
+}
+
+#articulo #resumen {
+    margin: 10px;
+}
+
+/* Para que el video sea responsive */
+/* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+#video-contenedor {
+    position: relative;
+    padding-bottom: 56.25%; 
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#autor {
+    background-color: rgb(102, 94, 71);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#autor #autor-foto {
+    margin: 10px;
+}
+
+#autor #autor-descripcion {
+    margin: 10px;
+}

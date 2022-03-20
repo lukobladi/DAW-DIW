@@ -10,7 +10,6 @@
 
 /* Estilo para todos todos los elementos */
 * {
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
@@ -39,12 +38,6 @@ main {
 
 }
 
-.imagen-fondo{
-    max-width: 100%;
-    height: auto;
-}
-
-
 footer {
     background-color: var(--color-secundario);
     color: var(--color-primario);
@@ -60,8 +53,9 @@ nav {
 }
 
 nav ul {
+    margin: auto;
     display: table;
-    margin: 0 auto;
+    
 }
 
 nav ul li {
@@ -79,6 +73,11 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--color-primario-claro);
 }
+
+nav ul li .actual{
+    text-decoration: underline;
+}
+
 
 footer .contenido{
     text-align: center;
