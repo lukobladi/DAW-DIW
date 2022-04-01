@@ -1,4 +1,11 @@
-.imagen-fondo{
-    max-width: 100%;
-    height: auto;
+main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    margin: 1rem;
+
 }
