@@ -1,0 +1,46 @@
+/* Para hacer que la capa de grid se superponga a la imagen de fondo */
+main {
+  display: inline-block;
+  position: relative;
+}
+
+/* Margenes de la imagen de fondo que tiene que ocupar siempre el ancho de pantalla */
+main .fondo-poster {
+  max-width: 94%;
+  height: auto;
+  margin: 3% 3% 3% 3%;
+  display: block;
+}
+
+/* GRID */
+main #grid {
+  /* Para hacer que la capa de grid se superponga a la imagen de fondo */
+  position: absolute;
+  left: 3%;
+  top: 3%;
+
+  /*gid*/
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-rows: 5vw;
+  grid-auto-rows: 9vw;
+  grid-template-columns: 1fr repeat(6, 3fr) 1fr;
+  /**/
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+
+}
+
+#grid>div {
+  position: relative;
+  background-color: var(--color-primario);
+  outline-style: solid;
+  outline-color: var(--color-primario);
+  outline-width: 1vw;
+}
+
+div#fila1-234, div#fila2-1, div#fila3-1, div#row3b, div#row4a, div#row5a, div#row5b, div#row6a, div#row7a, div#row8a, div#row9a, div#row10a, div#row12a {
+  background-color: rgba(64, 67, 78, 0.4);
+}

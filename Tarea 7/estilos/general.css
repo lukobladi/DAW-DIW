@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* defino los colores como variables para tenerlo unificado */
+:root {
+    --color-primario: rgb(201, 186, 145);
+    --color-secundario:  black;
+    --color-primario-claro: white;
+    --color-secundario-claro: #333333;
+}
+
+/* Estilo para todos todos los elementos */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Estilo para todos los enlaces */
+a:link, a:visited {
+    color: var(--color-secundario-claro);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: .88rem;
+}
+
+html{
+    background-color: var(--color-secundario);
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+header .titulo {
+    text-align: center;
+}
+
+nav {
+    display: block;
+
+}
+
+nav ul {
+    margin: auto;
+    display: table;
+    
+}
+
+nav ul li {
+    display: inline;
+    line-height: 2.5em;
+}
+
+nav ul li a {
+    display: block;
+    float: left;
+    margin: 0 1em;
+}
+
+
+nav ul li a:hover {
+    color: var(--color-primario-claro);
+}
+
+nav ul li .actual{
+    text-decoration: underline;
+}
+
+
+footer .contenido{
+    text-align: center;
+}
+
+.iconos-sociales{
+    display: table;
+    margin: 0 auto;
+}
+
+.iconos-sociales li {
+    display: inline;
+    line-height: 2.5em;
+    margin-inline-end: 20px;
+}
+
+.iconos-sociales li a:visited {
+    color: var(--color-primario);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: .88rem;
+}
+
+.iconos-sociales li a:hover {
+    color: var(--color-primario-claro);
+}
+
+.autoria{
+    font-size: .60rem;
+}
+
+#logo{
+    max-width: 20%;
+
+}
