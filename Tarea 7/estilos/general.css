@@ -45,9 +45,6 @@ header .titulo {
     
 }
 
-header .boton-main {
-    position:absolute; left:80px; top:20px;
-}
 
 nav {
     display: block;
