@@ -5,37 +5,41 @@ video {
   width: 40%;
 }
 
-/* GRID */
-main .grid {
-  display: grid;
-  /* Licencia de la foto CC BY-NC 2.0 anyjazz65 */
-  background-image: url(../imagenes/woman.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: var(--color-secundario);
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1vw;
-  grid-auto-rows: 1fr;
-  /* Grid Generado con: https://grid.layoutit.com/ */
-  grid-template-areas:
-    ". . . fila0-34 fila0-34 . . ."
-    ". . fila1-24 fila1-24 fila1-24 fila1-56 fila1-56 ."
-    ". . fila2-2 fila2-3 . . . ."
-    ". . fila3-23 fila3-23 fila3-34 fila3-34 . ."
-    ". . . fila4-3 . . . ."
-    ". fila5-13 fila5-13 fila5-13 fila5-4 fila5-56 fila5-56 ."
-    ". . fila6-2 . . fila6-56 fila6-56 ."
-    ". . . . fila7-4 fila7-56 fila7-56 ."
-    ". . . fila8-34 fila8-34 fila8-56 fila8-56 ."
-    ". . fila9-23 fila9-23 . fila9-56 fila9-56 ."
-    ". . . . . . . ."
-  ;
-  /**/
+/* GRID si es soportado */
 
-  color: #fff;
-  padding: 10px;
+@supports (display:grid) {
+  main .grid {
+    display: grid;
+    /* Licencia de la foto CC BY-NC 2.0 anyjazz65 */
+    background-image: url(../imagenes/woman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--color-secundario);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    grid-auto-rows: 1fr;
+    /* Grid Generado con: https://grid.layoutit.com/ */
+    grid-template-areas:
+      ". . . fila0-34 fila0-34 . . ."
+      ". . fila1-24 fila1-24 fila1-24 fila1-56 fila1-56 ."
+      ". . fila2-2 fila2-3 . . . ."
+      ". . fila3-23 fila3-23 fila3-34 fila3-34 . ."
+      ". . . fila4-3 . . . ."
+      ". fila5-13 fila5-13 fila5-13 fila5-4 fila5-56 fila5-56 ."
+      ". . fila6-2 . . fila6-56 fila6-56 ."
+      ". . . . fila7-4 fila7-56 fila7-56 ."
+      ". . . fila8-34 fila8-34 fila8-56 fila8-56 ."
+      ". . fila9-23 fila9-23 . fila9-56 fila9-56 ."
+      ". . . . . . . ."
+    ;
+    /**/
+
+    color: #fff;
+    padding: 10px;
+
+  }
 
 }
 
