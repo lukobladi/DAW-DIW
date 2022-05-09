@@ -1,0 +1,83 @@
+header {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+h2 {
+    font-size: 35px;
+
+}
+
+#formulario {
+    width: 50%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    height: 40px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+
+#foto{
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.columna {
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+
+.columna * {
+    display: inline-block;
+    width: 90%;
+    margin: 10px;
+}
+
+.columna-combinada {
+    float: left;
+    width: 100%;
+    text-align: justify;
+}
+
+.columna-combinada * {
+    display: inline-block;
+    width: 96%;
+    margin: 10px;
+}
+
+.columna-combinada select {
+    display: flex;
+    flex-shrink: 1 ;
+    width: 100%;
+}
+
+label{
+    height: 40px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+#foto {
+    border-style: solid;
+    border-width: 1px;
+}
+
+#div-enviar{
+    margin-left: 40px;
+}
+
+#enviar{
+    background-color: gold;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: none;
+    border: 0;
+}

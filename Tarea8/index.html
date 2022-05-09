@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Generado con https://favicomatic.com/ -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="imagenes/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="imagenes/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="imagenes/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="imagenes/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="imagenes/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="imagenes/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="imagenes/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="imagenes/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="imagenes/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="imagenes/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="imagenes/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="imagenes/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="imagenes/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <title> Inscripción a las jornadas X matemáticas </title>
+
+    <!-- Enlace al documento css. -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!-- Enlace al documento js. Antiguamente la recomendacion era ponerlo al final del documento para no  
+        bloquear la carga de la página. Hoy en día con asyn/defer puede cargarse simultaneamente y ganar tiempo -->
+    <script src="index.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h2>Inscripción a las jornadas X matemáticas </h2>
+
+        <p>Los campos señalados con * son obligatorios</p>
+
+    </header>
+
+    <main>
+        <form id="formulario">
+            <fieldset>
+                <legend style="font-weight: bold">Datos personales</legend>
+
+                <div class="columna">
+                    <label for="nombre">Nombre *</label><br>
+                    <input type="text" id="nombre" name="nombre" value="" required><br>
+                </div>
+
+                <div class="columna">
+                    <label for="apellidos">Apellidos *</label><br>
+                    <input type="text" id="apellidos" name="apellidos" value="" required><br>
+                </div>
+
+                <div class="columna">
+                    <label for="correo">Correo electrónico *</label><br>
+                    <input type="text" id="correo" name="correo" value="" required><br>
+                </div>
+
+                <div class="columna">
+                    <label for="telefono">Teléfono *</label><br>
+                    <input type="text" id="telefono" name="telefono" value="" required><br>
+                </div>
+
+                <div class="columna-combinada">
+                    <label for="foto">Fotografía para la acreditación</label><br>
+                    <input type="file" id="foto" name="foto" accept="image/png, image/jpeg"><br>
+
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend style="font-weight: bold">Perfil del participante</legend>
+
+                <div class="columna-combinada">
+                    <label for="motivo">¿Por qué está interesado en participar? *</label><br>
+                    <textarea id="motivo" name="motivo" rows="10" required> </textarea><br>
+                </div>
+
+                <div class="columna-combinada">
+                    <label for="actividad">Actividad profesional *</label><br>
+                    <select id="actividad" name="actividad" required>
+                        <option value="" disabled selected hidden>Seleccione una actividad</option>
+                        <option>GANADERÍA INDEPENDIENTE</option>
+                        <option>ENERGÍA Y AGUA.</option>
+                        <option> EXTRACCIÓN Y TRANSFORMACIÓN DE MINERALES NO ENERGÉTICOS Y PRODUCTOS DERIVADOS.
+                            INDUSTRIA QUÍMICA.</option>
+                        <option>INDUSTRIAS TRANSFORMADORAS DE LOS METALES. MECÁNICA DE PRECISIÓN.</option>
+                        <option>OTRAS INDUSTRIAS MANUFACTURERAS.</option>
+                        <option>COMERCIO, RESTAURANTES Y HOSPEDAJE, REPARACIONES.</option>
+                        <option>TRANSPORTE Y COMUNICACIONES.</option>
+                        <option>INSTITUCIONES FINANCIERAS, SEGUROS, SERVICIOS PRESTADOS A LAS EMPRESAS Y ALQUILERES.
+                        </option>
+                        <option>OTROS SERVICIOS.</option>
+                    </select>
+                </div>
+
+                <div class="columna-combinada">
+                    <label for="talleres">¿En qué talleres está interesado? *</label>
+                    <label for="talleres">Para seleccionar más de una opción, mantened pulsada la tecla
+                        Control(Windows)/Command(Mac) mientras hacéis click en las opciones</label><br>
+                    <select id="talleres" name="talleres" multiple required>
+                        <option>La encriptación a lo largo</option>
+                        <option>La seguridad informática</option>
+                        <option>Redes sociales y teoría</option>
+                        <option>Matemáticas y azar</option>
+                        <option>Problemas matemáticos</option>
+                        <option>La predicción del tiempo</option>
+                        <option>Fractales en el aula</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label >Seleccione una de las tres opciones sigientes: *</label><br>
+
+                    <input type="radio" id="dias4y5" name="asistencia" value="dias4y5">
+                    <label for="dias4y5">Asistiré los días 4 y 5 de mayo</label> <br>
+                    <input type="radio" id="dia4" name="asistencia" value="dia4">
+                    <label for="dia4">Asistiré solo el día 4 de mayo</label> <br>
+                    <input type="radio" id="dia5" name="asistencia" value="dia5">
+                    <label for="dia5">Asistiré solo el día 5 de mayo</label> <br>
+
+                </div>
+
+
+            </fieldset>
+
+            <div id="div-enviar">
+                <input type="checkbox" name="terminos" id="terminos" value="terminosAceptados">
+                <label for="terminos"> He leído y acepto la </label><a href="">politica de privacidad</a> y el <a
+                    href="">aviso legal</a><br>
+
+                <input id="enviar" type="submit" value="ENVIAR">
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="autoria">
+            <p>Actividad realizada por Eneko Bladi para DIW </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

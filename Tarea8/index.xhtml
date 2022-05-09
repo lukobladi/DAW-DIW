@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> Inscripci&oacute;n a las jornadas X matem&aacute;ticas </title>
+
+    <!-- Enlace al documento css. -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!-- Enlace al documento js. Antiguamente la recomendacion era ponerlo al final del documento para no  
+        bloquear la carga de la p&aacute;gina. Hoy en d&iacute;a con asyn/defer puede cargarse simultaneamente y ganar tiempo -->
+    <script type="text/javascript" src="index.js" defer="defer"></script>
+
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h2>Inscripci&oacute;n a las jornadas X matem&aacute;ticas </h2>
+
+        <p>Los campos se&ntilde;alados con * son obligatorios</p>
+
+    </div>
+
+    <div id="main">
+        <form id="formulario" action="javascript:void(0);">
+            <fieldset>
+                <legend style="font-weight: bold">Datos personales</legend>
+
+                <div class="columna">
+                    <label for="nombre">Nombre *</label><br />
+                    <input type="text" id="nombre" name="nombre" value="" /><br />
+                </div>
+
+                <div class="columna">
+                    <label for="apellidos">Apellidos *</label><br />
+                    <input type="text" id="apellidos" name="apellidos" value="" /><br />
+                </div>
+
+                <div class="columna">
+                    <label for="correo">Correo electr&oacute;nico *</label><br />
+                    <input type="text" id="correo" name="correo" value="" /><br />
+                </div>
+
+                <div class="columna">
+                    <label for="telefono">Tel&eacute;fono *</label><br />
+                    <input type="text" id="telefono" name="telefono" value="" /><br />
+                </div>
+
+                <div class="columna-combinada">
+                    <label for="foto">Fotograf&iacute;a para la acreditaci&oacute;n</label><br />
+                    <input type="file" id="foto" name="foto" accept="image/png, image/jpeg" /><br />
+
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend style="font-weight: bold">Perfil del participante</legend>
+
+                <div class="columna-combinada">
+                    <label for="motivo">&iquest;Por qu&eacute; est&aacute; interesado en participar&quest; *</label><br />
+                    <textarea id="motivo" name="motivo" rows="10" cols="100"> </textarea><br />
+                </div>
+
+                <div class="columna-combinada">
+                    <label for="actividad">Actividad profesional *</label>
+                    <select id="actividad" name="actividad" >
+                        <option value="" disabled="disabled" selected="selected" >Seleccione una actividad</option>
+                        <option>GANADER&iacute;A INDEPENDIENTE</option>
+                        <option>ENERG&iacute;A Y AGUA.</option>
+                        <option> EXTRACCI&oacute;N Y TRANSFORMACI&oacute;N DE MINERALES NO ENERG&eacute;TICOS Y PRODUCTOS DERIVADOS.
+                            INDUSTRIA QU&iacute;MICA.</option>
+                        <option>INDUSTRIAS TRANSFORMADORAS DE LOS METALES. MEC&aacute;NICA DE PRECISI&oacute;N.</option>
+                        <option>OTRAS INDUSTRIAS MANUFACTURERAS.</option>
+                        <option>COMERCIO, RESTAURANTES Y HOSPEDAJE, REPARACIONES.</option>
+                        <option>TRANSPORTE Y COMUNICACIONES.</option>
+                        <option>INSTITUCIONES FINANCIERAS, SEGUROS, SERVICIOS PRESTADOS A LAS EMPRESAS Y ALQUILERES.
+                        </option>
+                        <option>OTROS SERVICIOS.</option>
+                    </select>
+                </div>
+
+                <div class="columna-combinada">
+                    <label for="talleres">&iquest;En qu&eacute; talleres est&aacute; interesado&quest; *</label>
+                    <label for="talleres">Para seleccionar m&aacute;s de una opci&oacute;n, mantened pulsada la tecla
+                        Control(Windows)/Command(Mac) mientras hac&eacute;is click en las opciones</label><br />
+                    <select id="talleres" name="talleres" multiple="multiple">
+                        <option>La encriptaci&oacute;n a lo largo</option>
+                        <option>La seguridad inform&aacute;tica</option>
+                        <option>Redes sociales y teor&iacute;a</option>
+                        <option>Matem&aacute;ticas y azar</option>
+                        <option>Problemas matem&aacute;ticos</option>
+                        <option>La predicci&oacute;n del tiempo</option>
+                        <option>Fractales en el aula</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label>Seleccione una de las tres opciones sigientes: *</label><br />
+
+                    <input type="radio" id="dias4y5" name="asistencia" value="dias4y5" />
+                    <label for="dias4y5">Asistir&eacute; los d&iacute;as 4 y 5 de mayo</label> <br />
+                    <input type="radio" id="dia4" name="asistencia" value="dia4" />
+                    <label for="dia4">Asistir&eacute; solo el d&iacute;a 4 de mayo</label> <br />
+                    <input type="radio" id="dia5" name="asistencia" value="dia5" />
+                    <label for="dia5">Asistir&eacute; solo el d&iacute;a 5 de mayo</label> <br />
+
+                </div>
+
+
+            </fieldset>
+
+            <div id="div-enviar">
+                <input type="checkbox" name="terminos" id="terminos" value="terminosAceptados" />
+                <label for="terminos"> He le&iacute;do y acepto la </label><a href="">politica de privacidad</a> y el <a
+                    href="">aviso legal</a><br />
+
+                <input id="enviar" type="submit" value="ENVIAR" />
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div id="footer">
+        <div class="autoria">
+            <p>Actividad realizada por Eneko Bladi para DIW </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
