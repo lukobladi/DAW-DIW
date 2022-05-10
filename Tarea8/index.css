@@ -1,4 +1,4 @@
-header {
+#header {
     width: 70%;
     margin: auto;
     text-align: center;
@@ -6,7 +6,7 @@ header {
 }
 
 
-h2 {
+h1 {
     font-size: 35px;
 
 }
